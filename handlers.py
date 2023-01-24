@@ -13,6 +13,7 @@ async def start(message: Message):
                            'Тестируем WebApp',
                            reply_markup=keyboard)
 
+##
 @dp.message_handler(content_types="web_app_data") #получаем отправленные данные 
 async def answer(webAppMes):
     print(webAppMes) #вся информация о сообщении
