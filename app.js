@@ -15,6 +15,8 @@ show_btn.addEventListener('click', function() {
     let user_phone_number = document.getElementById('user_phone_number').value;
 
     p.innerText = 'User Name ---- ' + user_name + 'User phone number --- ' + user_phone_number;
+    container.appendChild(p);
+    tg.MainButton.show();
 });
 
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
@@ -22,5 +24,5 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	//при клике на основную кнопку отправляем данные в строковом виде
 });
 
-container.appendChild(p);
+
 
